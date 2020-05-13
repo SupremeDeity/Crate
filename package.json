@@ -1,10 +1,11 @@
 {
-  "name": "notepad",
+  "name": "crate",
   "version": "1.0.0",
   "description": "Creating a basic Notepad",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-win": "electron-packager . Crate --asar --platform=win32 --arch=ia32"
   },
   "keywords": [
     "notepad",
@@ -16,9 +17,12 @@
     "@typescript-eslint/eslint-plugin": "^2.32.0",
     "@typescript-eslint/parser": "^2.32.0",
     "electron": "^8.2.5",
+    "electron-packager": "^14.2.1",
     "eslint": "^7.0.0"
   },
   "dependencies": {
-    "jshint": "^2.11.0"
+    "jshint": "^2.11.0",
+    "monaco-editor": "^0.20.0",
+    "monaco-loader": "^1.0.0"
   }
 }
