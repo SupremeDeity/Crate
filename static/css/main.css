@@ -1,0 +1,13 @@
+body {
+    background: #27496d;
+}
+#content {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre; /* This is important otherwise tabs and spaces get messed up.*/
+    color: #449aeb;
+    min-height: 100vh;
+}
+
+#content:focus {
+    outline: none !important; /*Removes the default outline*/
+}
